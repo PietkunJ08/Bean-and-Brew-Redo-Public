@@ -16,15 +16,15 @@
             </ul>
         </div>
        
-<div class="flash-center">
-    {% with messages = get_flashed_messages() %}
-      {% if messages %}
-          {% for message in messages %}
-              <div class="alert">{{ message }}</div>
-          {% endfor %}
-      {% endif %}
-    {% endwith %}
-</div>
+        <div class="flash-center">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                  {% for message in messages %}
+                      <div class="alert">{{ message }}</div>
+                  {% endfor %}
+              {% endif %}
+            {% endwith %}
+        </div>
  
         <h1 style="text-align:center;">Flask Login Site</h1>
         {% block content %}{% endblock %}

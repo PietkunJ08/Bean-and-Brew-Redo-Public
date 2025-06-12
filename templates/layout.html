@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Login Website</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('signup') }}">Sign Up</a></li>
+                {% if session.get('username') %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                {% endif %}
+            </ul>
+        </div>
+        
+        <div class="flash-center">
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                  {% for mesages in messages %}
+                      <div class="alert">{{ message }}</div>
+                  {% endfor %}
+              {% endif %}
+            {% endwith %}
+        </div>
+
+        <h1 style="text-align:center;">Flask Login Site</h1>
+        {% block content %}{% endblock %}
+    </body>
+</html>

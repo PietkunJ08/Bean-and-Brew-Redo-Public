@@ -1,0 +1,157 @@
+/* Headings styling */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #1335cc;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(68, 0, 255);
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+}
+
+/* Paragraph styling */
+p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+/* To CENTER <body> content [avoid <center> as it's obsolete in HTML5] */
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* To CENTER the Flash messages */
+.flash-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.alert {
+    background: #e0ffe0;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Navigation menu styling */
+#menu {
+    margin: 0 auto;
+    width: 400px;
+    height: 50px;
+}
+
+#menu ul {
+    width: 400px;
+    height: 50px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e70d0d;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu a {
+    width: 100px;
+    height: 50px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#menu a:hover {
+    background-color: blue;   
+}
+
+/* Button styling */
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* START of Form CSS */
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Input fields styling */
+input[type=text], select, textarea {
+    width: 300px;
+    height: 40px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Form button styling */
+.button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/* END of Form CSS */
+
+
+/* START of Table CSS */
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+td, th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+    width: 200px;
+}
+
+tr:nth-child(even) {
+    background-color: yellow;
+}
+/* END of Table CSS */
